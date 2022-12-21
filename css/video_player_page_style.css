@@ -1,0 +1,104 @@
+/*----main-header-----*/
+.header {
+    margin-bottom: 29px;
+}
+/*----main-wrapper-----*/
+.main-wrapper {
+    justify-content: center;
+    gap: 30px;
+}
+/*----video-player-control-section----*/
+.video-player-control {
+    max-width: 1363px;
+}
+/*----*/
+.video-player-video-list {
+    max-width: 367px;
+}
+.video-player-video-list-header {
+    display: flex;
+    justify-content: space-between;
+}
+.video-player-video-list-header div {
+    display: flex;
+    align-items: flex-end;
+}
+.video-player-video-list-header h2 {
+font-size: 36px;
+line-height: 45px;
+color: #19202C;
+}
+.video-player-video-list-header p {
+    font-size: 16px;
+line-height: 20px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #19202C;
+}
+.video-player-video-list-items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+.subs_btn {
+    background: #FF0000;
+    border-radius: 20px;
+    width: 154px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.video-player-video-list-items > div > div:first-child {
+    position: relative;
+    margin-bottom: 9px;
+    min-width: 367px;
+    border-radius: 14px;
+}
+
+.video-player-video-list-items .rectangle {
+    position: absolute;
+    top: 181px;
+    right: 12px;
+}
+.video-player-video-list-items img:first-child {
+    width: 100%;
+}
+.video-player-video-list-items > div > div:first-child > span {
+    position: absolute;
+    top: 183px;
+    right: 22px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.video-player-video-list-items > div {
+    
+}
+
+.video-player-video-list-items p {
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: normal;
+    
+    
+    color: #19202C;
+}
+
+.video-player-video-list-items > div > div:last-child > span {
+    font-size: 18px;
+    line-height: 23px;
+     
+    color: #C2C2C2;
+    
+}
+
+.video-player-video-list-items > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
