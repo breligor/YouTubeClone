@@ -277,9 +277,13 @@ nav p {
 }
 
 .user-videos-header h3 {
-    font-size: 26px;
-    line-height: 33px;
-    margin-left: 22px;
+        font-size: 26px;
+        line-height: 33px;
+        margin-left: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-family: 'Mulish';
+        color: #19202C;
 }
 
 .users-video-header__right-side {
