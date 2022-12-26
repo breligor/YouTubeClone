@@ -1,0 +1,702 @@
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+/*img {
+    vertical-align: top;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Mulish';
+}
+
+body {
+    min-width: 320px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+    max-height: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 49px 0;
+}
+
+.header__left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 32px;
+    gap: 28px;
+}
+
+/*--------------------------hamburger----------------------------*/
+
+.hamburger {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.hamburger .line {
+    width: 20px;
+    height: 3px;
+    background-color: #1F2022;
+    display: block;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/*---youtybeLogo---*/
+
+.logo {
+    cursor: pointer
+}
+
+/*---searchInput---*/
+
+.search-container {
+    width: 830px;
+    position: relative;
+}
+
+.search {
+    display: block;
+    width: 830px;
+    margin-left: 34px;
+    height: 44px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    outline: none;
+}
+
+.header__left-side input::placeholder {
+    font-size: 16px;
+    line-height: 20.08px;
+    color: #30384C;
+    padding-left: 23px;
+    font-weight: 400;
+}
+
+.search-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-btn-link {
+    position: absolute;
+    right: -21px;
+    bottom: -1px;
+}
+
+/*---------------header__right-side-------------------------*/
+
+.header__right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 70px;
+    gap: 49px;
+}
+
+.header__right-side div:first-child {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+}
+
+/* .header__right-side img:not(:first-child):not(:last-child) {
+    margin-left:50px;
+} */
+
+.red-oval {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 158px;
+    top: -5px;
+    border: 1px solid #FFFFFF;
+    background: #FF0000;
+    border-radius: 50%;
+}
+
+.red-oval-text {
+    font-size: 12px;
+    line-height: 15.06px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: 163px;
+    z-index: 100;
+}
+
+/*------main-wrapper---------*/
+
+.main-wrapper {
+    display: flex;
+}
+
+/*------------nav-------------*/
+
+.navigation {
+    font-size: inherit;
+    margin-left: 31px;
+    color: #898989;
+    font-family: 'Mulish';
+    font-weight: 400;
+}
+
+.home p {
+    color: #FF0000;
+}
+
+nav div > div {
+    display: flex;
+    align-items: center;
+}
+
+nav p {
+    margin-left: 13px;
+}
+
+.home_nav div:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.home_nav div:last-child {
+    margin-bottom: 63px;
+}
+
+.menu_nav div:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.menu_nav div:last-child {
+    margin-bottom: 62px;
+}
+
+#games {
+    margin-bottom: 29px;
+}
+
+.subscriptions {
+    min-width: 161px;
+    margin-right: 64px;
+}
+
+.subscriptions h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.subscriptions p {
+    margin-left: 10px;
+}
+
+.subscriptions div:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.subscriptions div:last-child {
+    margin-bottom: 104px;
+}
+
+.settings {
+    margin-bottom: 40px;
+}
+
+.settings > div > p {
+    margin-bottom: 6px;
+    margin-left: 8px;
+}
+
+/*---section-users-videos----*/
+
+.user-videos-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.users-video-header__left-side {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.user-videos-header h3 {
+        font-size: 26px;
+        line-height: 33px;
+        margin-left: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-family: 'Mulish';
+        color: #19202C;
+}
+
+.users-video-header__right-side {
+    margin-right: 190px;
+    display: flex;
+    align-items: end;
+}
+
+.users-video-header__right-side .right-chevron {
+    margin-left: 10px;
+}
+
+.users-video-items {
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.users-video-items > div {
+    margin-right: 40px;
+}
+
+.users-video-items > div > div {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.users-video-items .rectangle {
+    position: absolute;
+    top: 116px;
+    right: 10px;
+}
+
+.users-video-items > div > div:first-child > span {
+    position: absolute;
+    top: 118px;
+    right: 19px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.users-video-items p {
+    font-size: 16px;
+    line-height: 5px;
+    color: #19202C;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.users-video-items > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.users-video-items > div > div:last-child > span {
+    font-size: 13px;
+    line-height: 19px;
+    color: #C2C2C2;
+}
+
+/*---section-recommended-videos----*/
+
+.recommended-videos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.recommended-videos-header h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 22px;
+    color: #19202C;
+}
+
+.recommended-videos-header__right-side {
+    margin-right: 190px;
+    display: flex;
+
+}
+
+.recommended-videos-header__right-side .right-chevron {
+    margin-left: 10px;
+}
+
+.recommended-video-items {
+    display: flex;
+    margin-bottom: 47px;
+}
+
+.recommended-video-items > div > div:first-child {
+    position: relative;
+    margin-bottom: 9px;
+}
+
+.recommended-video-items .rectangle {
+    position: absolute;
+    top: 216px;
+    right: 10px;
+}
+
+.recommended-video-items > div:last-child > div > .rectangle {
+    right: -24px;
+}
+
+.recommended-video-items > div {
+    margin-right: 40px;
+}
+
+.recommended-video-items > div > div:first-child > span {
+    position: absolute;
+    top: 218px;
+    right: 19px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.recommended-video-items > div:last-child > div > span {
+    right: -13px;
+}
+
+.recommended-video-items p {
+    font-size: 16px;
+    line-height: 12px;
+    color: #19202C;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.recommended-video-items > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended-video-items > div > div:last-child > span {
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+/*---section-recommended-channels----*/
+
+.recommended-channels-header {
+    display: flex;
+    justify-content: space-between;
+    /*   align-items: center;*/
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.recommended-channels-header__left-side {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.recommended-channels-items {
+    display: flex;
+}
+
+.recommended-channels-header__left-side h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: #19202C;
+    margin-left: 20px;
+}
+
+.recommended-channels-header__left-side p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #C2C2C2;
+    margin-left: 20px;
+}
+
+.recommended-channels-header__left-side div {
+    display: flex;
+    align-items: end;
+}
+
+.recommended-channels-header__right-side {
+    margin-right: 190px;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.recommended-channels-header__right-side .right-chevron {
+    margin-left: 10px;
+}
+
+.recommended-channels-header__right-side .left-chevron {
+    margin-left: 40px;
+}
+
+.subs_btn {
+    background: #FF0000;
+    border-radius: 20px;
+    width: 154px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.recommended-channels-items > div > div:first-child {
+    position: relative;
+    margin-bottom: 9px;
+}
+
+.recommended-channels-items .rectangle {
+    position: absolute;
+    top: 116px;
+    right: 12px;
+}
+
+.recommended-channels-items > div > div:first-child > span {
+    position: absolute;
+    top: 119px;
+    right: 22px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.recommended-channels-items > div {
+    margin-right: 40px;
+}
+
+.recommended-channels-items p {
+    font-size: 16px;
+    line-height: 12px;
+    color: #19202C;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.recommended-channels-items > div > div:last-child > span {
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.recommended-channels-items > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---@media ---*/
+
+@media screen and (max-width: 320px) {
+
+    .wrapper {
+        min-height: 100%;
+        overflow: hidden;
+        max-width: 320px;
+        max-height: 1024px;
+        margin: 0 auto;
+    }
+
+    .hamburger,
+    .header__right-side > div:first-child,
+    .user-videos-header,
+    .subscriptions,
+    .settings,
+    .favourites {
+        display: none;
+    }
+
+    /*-----header------*/
+    .header__right-side .user {
+        width: 30px;
+        vertical-align: top;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search {
+        margin: 0;
+        width: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 13px 0;
+    }
+
+    .header__left-side {
+        margin-left: 16px;
+        gap: 100px;
+    }
+
+    .header__right-side {
+        margin-right: 16px;
+    }
+
+    .search-btn-link {
+        right: -25px;
+        bottom: 0;
+    }
+
+    /*-------main-----------*/
+    .main-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    main {
+        max-height: 888px;
+        overflow: hidden;
+        border-bottom: 1px solid gray;
+    }
+
+    /*---.user-videos---*/
+    .users-video-items {
+        flex-direction: column;
+        margin-left: 16px;
+        max-width: 288px;
+    }
+
+    .users-video-items > div {
+        margin: 0;
+    }
+
+    .user-videos-img {
+        min-width: 100%;;
+    }
+
+    .users-video-items > div > div:first-child {
+        max-height: 150px;
+        overflow: hidden;
+        margin-bottom: 17px;
+        border-radius: 10px;
+    }
+
+    .users-video-items > div > div:last-child {
+
+        margin-bottom: 28px;
+    }
+
+    .users-video-items > div > div:first-child > span {
+        top: 120px;
+    }
+
+    /*---.recommended-video---*/
+    .recommended-video-items {
+        flex-direction: column;
+    }
+
+    /*---.navigation---*/
+    .navigation {
+        display: flex;
+        align-items: baseline;
+        max-height: 60px;
+        max-width: 320px;
+        margin-left: 16px;
+        font-size: 10px;
+        margin-top: 25px;
+    }
+
+    .navigation img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav p {
+        margin: 0;
+    }
+
+    .home_nav {
+        display: flex;
+        max-width: 288px;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 45px;
+        margin-right: 25px;
+    }
+
+    .home_nav div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home_nav div:last-child {
+        margin: 0;
+    }
+
+    .home_nav div:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .subscriptions {
+        margin: 0;
+        min-width: 0;
+    }
+
+    .menu_nav {
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+    }
+
+    .menu_nav div {
+        display: flex;
+        flex-direction: column;
+    }
+}
